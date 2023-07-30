@@ -63,6 +63,14 @@ temp = 0 // temp > 0 && temp < 10, temp > 10 && temp < 15, temp > 15 && temp < 2
 // temp < 0 ? === if (temp < 0)
 // temp > 0 ? console.log("havo juda sovuq") : console.log("not found");
 
+temp < 0
+? console.log("havo juda sovuq")
+: temp < 10
+? console.log("havo sovuq")
+: temp < 15
+? console.log('Havo issiq')
+: console.log("havo juda issiq");     // be ternaryni multi stateda ishlatilishi, ln chitaemosh qiyinlashadi 
+
 // temp <= 10 && temp > 0 
 // ? console.log("havo juda sovuq") 
 // : console.log("not found");
