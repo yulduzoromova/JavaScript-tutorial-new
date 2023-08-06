@@ -85,7 +85,7 @@ function name() {
 
 // console.log(gpa(4.5, 3, 3.5, 2));  // 3.25
 
-// FUNCTIONDAN QAYTAYOTGAN QIYMAT USTIDA BIROR AMAL BAJARMOQCHI BO'LSAK, NaN QAYTARADI
+// FUNCTIONDAN QAYTAYOTGAN QIYMAT USTIDA BIROR AMAL BAJARMOQCHI BO'LSAK, QIYMAT QAYTARMASLIGI MUMKIN
 // UNI USTIDA AMAL BAJARISH UCHUN CONSOL.LOGDA ESAM RETURNDA JBNI CHIQARISHIMIZ KK. SHUNDA FUNKSIYA QAYTARGAN QIYMAT USTIDA YANA BIROR AMAL BAJARISH MUMKIN.
 
 const gpa = (a = 0, b = 0, c = 0, d = 0) => {
@@ -105,4 +105,23 @@ console.log(gpa(5, 3, 3, 2));   // 3.25
 // - "check..." -- check smth n return boolean
 // - camel case - getAge, showPrime
 
+// 1-savol: Functionni declare qilishning necci xil usuli bor?
+// javob: 2-xil usuli bor Function decloration va function expression
 
+// FD
+function name(params) {
+  
+}
+
+// FE 
+const funcName = function () {
+
+}
+
+// 2-savol. Shadow variable - the same name varaible
+// bor varaiblega yana bitta boshqa qiymat biriktirilishiga aytiladi
+// 
+
+// 3-savol Qachon functionda return ishlatamiz?
+// Agar functiondan qaytgan qiymat ustida yana amal bajarmoqchi bo'lsak return ishlatamiz
+// return oo'sha ma'lum nomli func.ga qiymatni biriktirib qo'yadi
