@@ -110,12 +110,10 @@ console.log(gpa(5, 3, 3, 2));   // 3.25
 
 // FD
 function name(params) {
-  
 }
 
 // FE 
 const funcName = function () {
-
 }
 
 // 2-savol. Shadow variable - the same name varaible
@@ -124,4 +122,4 @@ const funcName = function () {
 
 // 3-savol Qachon functionda return ishlatamiz??
 // Agar functiondan qaytgan qiymat ustida yana amal bajarmoqchi bo'lsak return ishlatamiz
-// return oo'sha ma'lum nomli func.ga qiymatni biriktirib qo'yadi
+// return o'sha ma'lum nomli func.ga qiymatni biriktirib qo'yadi!!

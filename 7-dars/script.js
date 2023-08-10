@@ -143,28 +143,33 @@ console.log(account);        // { name: 'Webbrain Academy', major: 2022 }
 // console.log("name" in ac1);     // true , bu degani name degan o'zgaruvchi bor yo'qligini qaytaradi
 
 // ==============================
-// Object.assign()
+// Object.assign() - 1TA BO'SH OBYEKTGA BOSHQA BIR OBYEKTNING MA'LUMOTLARINI BIRIKTIRISH UCHUN QO'LLANILADI!
 
-// let name = "webbrain academy";
-// let major = "Frontend";
 
-// const ac1 = {
-//   name: "Webbrain Academy",
-//   major: "Frontend",
-// };
+let name = "webbrain academy";
+let major = "Frontend";
 
-// const ac2 = {};
+const ac1 = {
+  name: "Webbrain Academy",
+  major: "Frontend",
+};
 
-// Object.assign(ac2, ac1);
+const ac2 = {};
 
-// console.log(ac2);
+Object.assign(ac2, ac1);     // ac2ga ac1ning ma'lumoti biriktirilyapti
+
+console.log(ac2);            // { name: 'Webbrain Academy', major: 'Frontend' }
 
  
-// ac1.name = 'test'
-// console.log(ac1);
-// console.log(ac2);
+ac1.name = 'test'
+console.log(ac1);           // { name: 'test', major: 'Frontend' }   
+console.log(ac2);           // { name: 'Webbrain Academy', major: 'Frontend' }
 
-// For in
+// AGAR Object.assign dan OLDIN O'ZGARTIRISH KIRITILSA IKKINCHI OBYEKTDA HAM O'ZGARISH BO'LADI.
+// AGAR UNDAN KEYIN KIRITILSA 1CHI OBYEKTDA O'ZGARISH BO'LADI 2-SI O'ZGARISHSIZ QOLADI
+
+
+// // For in
 
 const ac1 = {
   name: "Webbrain Academy",
@@ -172,13 +177,12 @@ const ac1 = {
   founded: 2022,
   students: 1000,
   mentors: 5,
-};
-
-// for ( let i in ac1) {
-//   console.log(i);              // i bu yerda keylar
-// }
+};                                                     // name
+                                                          // major
+// for ( let i in ac1) {                                  // founded
+//   console.log(i);              // i bu yerda keylar =>    students 
+// }                                                         mentors 
 
 for ( let i in ac1) {
   console.log(ac1[i]);              // keyning valuelarini olish ya'ni Webbrain Academy, Frontend, 2022, 1000, 5
-
 }
