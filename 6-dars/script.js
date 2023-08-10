@@ -120,6 +120,6 @@ const funcName = function () {
 // bor varaiblega yana bitta boshqa qiymat biriktirilishiga aytiladi
 // 
 
-// 3-savol Qachon functionda return ishlatamiz??
+// 3-savol Qachon functionda return ishlatamiz?
 // Agar functiondan qaytgan qiymat ustida yana amal bajarmoqchi bo'lsak return ishlatamiz
 // return o'sha ma'lum nomli func.ga qiymatni biriktirib qo'yadi!!
