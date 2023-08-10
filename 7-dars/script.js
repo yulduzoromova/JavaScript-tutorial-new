@@ -45,29 +45,29 @@
 
 //  =======================================
 
-let account = {
-  name: "Webbrain Academy",
-  major: "Fronted, bunker", 
-};
+// let account = {
+//   name: "Webbrain Academy",
+//   major: "Fronted, bunker", 
+// };
 
-Object.freeze(account);         // objectni muzlatib qo'yadi ya'ni obyektga o'zgartirish kiritib bo'lmaydi. 
+// Object.freeze(account);         // objectni muzlatib qo'yadi ya'ni obyektga o'zgartirish kiritib bo'lmaydi. 
 
-account.founded = 2022;         
-delete account.major;           // bu o'zgarishlarni ham qabul qilmaydi
+// account.founded = 2022;         
+// delete account.major;           // bu o'zgarishlarni ham qabul qilmaydi
  
-console.log(account);  
+// console.log(account);  
 
-// =================================
+// // =================================
 
-let account = {
-  name: "Webbrain Academy",
-  major: "Fronted, bunker", 
-};
+// let account = {
+//   name: "Webbrain Academy",
+//   major: "Fronted, bunker", 
+// };
 
-Object.seal(account);         // freezega o'xshagan ma'lumot kiritib bo'lmaydi, o'chirib ham bo'lmaydi ammo, bor ma'lumotni valuesini o'zgartirsa bo'ladi.
+// Object.seal(account);         // freezega o'xshagan ma'lumot kiritib bo'lmaydi, o'chirib ham bo'lmaydi ammo, bor ma'lumotni valuesini o'zgartirsa bo'ladi.
 
-account.major = 2022;
-console.log(account);        // { name: 'Webbrain Academy', major: 2022 }
+// account.major = 2022;
+// console.log(account);        // { name: 'Webbrain Academy', major: 2022 }
 
 // =================================
 
@@ -146,24 +146,23 @@ console.log(account);        // { name: 'Webbrain Academy', major: 2022 }
 // Object.assign() - 1TA BO'SH OBYEKTGA BOSHQA BIR OBYEKTNING MA'LUMOTLARINI BIRIKTIRISH UCHUN QO'LLANILADI!
 
 
-let name = "webbrain academy";
-let major = "Frontend";
+// let name = "webbrain academy";
+// let major = "Frontend";
 
-const ac1 = {
-  name: "Webbrain Academy",
-  major: "Frontend",
-};
+// const ac1 = {
+//   name: "Webbrain Academy",
+//   major: "Frontend",
+// };
 
-const ac2 = {};
+// const ac2 = {};
 
-Object.assign(ac2, ac1);     // ac2ga ac1ning ma'lumoti biriktirilyapti
+// Object.assign(ac2, ac1);     // ac2ga ac1ning ma'lumoti biriktirilyapti
 
-console.log(ac2);            // { name: 'Webbrain Academy', major: 'Frontend' }
-
+// console.log(ac2);            // { name: 'Webbrain Academy', major: 'Frontend' }
  
-ac1.name = 'test'
-console.log(ac1);           // { name: 'test', major: 'Frontend' }   
-console.log(ac2);           // { name: 'Webbrain Academy', major: 'Frontend' }
+// ac1.name = 'test'
+// console.log(ac1);           // { name: 'test', major: 'Frontend' }   
+// console.log(ac2);           // { name: 'Webbrain Academy', major: 'Frontend' }
 
 // AGAR Object.assign dan OLDIN O'ZGARTIRISH KIRITILSA IKKINCHI OBYEKTDA HAM O'ZGARISH BO'LADI.
 // AGAR UNDAN KEYIN KIRITILSA 1CHI OBYEKTDA O'ZGARISH BO'LADI 2-SI O'ZGARISHSIZ QOLADI
@@ -171,18 +170,18 @@ console.log(ac2);           // { name: 'Webbrain Academy', major: 'Frontend' }
 
 // // For in
 
-const ac1 = {
-  name: "Webbrain Academy",
-  major: "Frontend",
-  founded: 2022,
-  students: 1000,
-  mentors: 5,
-};                                                     // name
+// const ac1 = {
+//   name: "Webbrain Academy",
+//   major: "Frontend",
+//   founded: 2022,
+//   students: 1000,
+//   mentors: 5,
+// };                                                     // name
                                                           // major
 // for ( let i in ac1) {                                  // founded
 //   console.log(i);              // i bu yerda keylar =>    students 
 // }                                                         mentors 
 
-for ( let i in ac1) {
-  console.log(ac1[i]);              // keyning valuelarini olish ya'ni Webbrain Academy, Frontend, 2022, 1000, 5
-}
+// for ( let i in ac1) {
+//   console.log(ac1[i]);              // keyning valuelarini olish ya'ni Webbrain Academy, Frontend, 2022, ...
+// }
