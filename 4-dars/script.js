@@ -50,11 +50,11 @@ temp = 0 // temp > 0 && temp < 10, temp > 10 && temp < 15, temp > 15 && temp < 2
 // else return false;
 
  temp = 25;
-// if (temp < 0) console.log('havo juda sovuq');
-// else if(temp <= 25 && temp > 15) console.log('havo sovuq');
-// else if(temp <= 15 && temp > 10) console.log('havo issiq');
-// else if(temp <= 10 && temp > 0)  console.log('havo juda issiq');     // bunaqa caselarda kichik sondan kattasiga qarab tekshirish kk
-// else console.log('not found');
+if (temp < 0) console.log('havo juda sovuq');
+else if(temp <= 25 && temp > 15) console.log('havo sovuq');
+else if(temp <= 15 && temp > 10) console.log('havo issiq');
+else if(temp <= 10 && temp > 0)  console.log('havo juda issiq');     // bunaqa caselarda kichik sondan kattasiga qarab tekshirish kk
+else console.log('not found');
 
 // ternary operator - faqat true falseni tekshirish uchun ishlatish maslahat beriladi
 
