@@ -169,12 +169,12 @@
 
 // ============================
 
-// const obj1 = {
-//   name: 'webbrain',
-//   age: 2345,
-// };
+const obj1 = {
+  name: 'webbrain',
+  age: 2345,
+};
 
-// console.log({obj1, name: 'IT center'});      // { obj1: { name: 'webbrain', age: 2345 }, name: 'IT center' }
+console.log({obj1, name: 'IT center'});      // { obj1: { name: 'webbrain', age: 2345 }, name: 'IT center' }
 
 // spread operator ... yozilmasa bor obyektga yangi nameni qo'shib qo'yadi
 
