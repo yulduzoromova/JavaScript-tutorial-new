@@ -1,6 +1,6 @@
 // null - primitive data tuype ln obyekt chunki link qaytaradi
 
-// This
+// This - obyektni o'zini nazarda tutadi, this obyektni target qiladi!
 // this === window        // true
 // let user = {
 //   name: 'webbrain',
