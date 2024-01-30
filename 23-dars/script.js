@@ -35,20 +35,3 @@ ar.remove(4);   // arraydan 4 soni o'chdi
 ar.remove(1);   // arraydan 1 soni o'chdi
 
 
-let obj = {
-  name: 'webbrain',
-  last: 'IT Academy'
-}
-
-Object.prototype.remove = function (n) {
-  for (v in obj){
-    console.log(v);
-    if (v == n ) {
-    delete this.n
-    }
-  }
-}
-
-obj.remove('name')
-
-console.log(obj);

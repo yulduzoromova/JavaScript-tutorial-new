@@ -51,5 +51,5 @@ const sum1 = (n) => {
     return sum;
   }
  }
- getCalc(company)
+ console.log(getCalc(company))
  

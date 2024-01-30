@@ -15,12 +15,12 @@ let user = { name: "webbrain", title: "IT Center", getData(){}}
 // loop
 // value      bularni har birini control qilishimiz mumkin, bu flag deyiladi.
 
-console.log(Object.getOwnPropertyDescriptor(user, 'name'));                                          
+console.log(Object.getOwnPropertyDescriptor(user, 'name'));      // flaglarni holatini ko'rsatadi                                    
 //* {
 // value: 'webbrain',
 //  writable: true,
-//  enumerable: true,
-//  configurable: true
+//  enumerable: true, = loop
+//  configurable: true = delete
 // }
 
 Object.defineProperty(user, "getData", {writable: false, enumerable: false })
@@ -47,10 +47,18 @@ const user1 = {
   get fullname() {
     console.log(this.name, this.last );
   },
+  set fullname(value) {
+    this.name = value.name;
+    this.last = value.last;
+    //console.log((this.name, this.last ));
+  },
 };
 //user1.fullname()       // webbrain Academy
 
-user1.fullname = 'eshmat toshmat'   // qiymatini o'zgartirib bermaydi, huddi shunday ma'lumotlarni o'zgartirish uchun getter setterdan foydalanishimiz mumkin.
+user1.fullname = {name: 'eshmat', last: "toshmat"}  // qiymatini o'zgartirib bermaydi, huddi shunday ma'lumotlarni o'zgartirish uchun getter setterdan foydalanishimiz mumkin.
 
 
 user1.fullname
+
+// get ma'lumotni olish uchun 
+// set har doim value qabul qiladi

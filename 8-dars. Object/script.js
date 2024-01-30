@@ -107,7 +107,7 @@
 // };
 
 // for (value in obj) {
-//   console.log(obj[value]);         // valuelarni chiqaradi ya'ni name,title, agae
+//   console.log(obj[value]);         // valuelarni chiqaradi ya'ni name,title, age
 //                                   // obj.value deb yozilmidi chunki obj ni ichidagi value keyini qidiradi va underfined qaytaradi
 // }
 

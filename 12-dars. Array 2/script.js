@@ -40,6 +40,8 @@ console.log(rez);
 //  { id: 8, year: 2002, name: 'Shukurov' }
 // ]
 
+// ========================
+// Elementlarning tartibini aniqlashda qo'llaniladigan funksiya. Birinchi argument ikkinchi argumentdan kam bo'lsa manfiy qiymatni, teng bo'lsa nol va aks holda musbat qiymatni qaytarishi kutilmoqda. Agar qoldirilgan bo'lsa, elementlar yuqoriga ko'tarilgan, ASCII belgi tartibida tartiblanadi.
 let n = [2, 3, 1, 7, 22, 45]
 let r = n.sort((a, b) => a - b);
 console.log(r);                       // [ 1, 2, 3, 7, 22, 45 ]
@@ -119,7 +121,7 @@ console.log(c[1][1][0]);          // 3
 
 // array ichida arraylarni chaqirayotganimizda yuqoridaqa yozuvda chaqiramiz, ya'ni cning[index][index][index]
 
-// flat() methodi bir necha ichma - ich arraylarni childdan chiqarib beradi. Masalan yuqoridagi c arrayni qiymatlarini hisonblamoqchi bo'lsak, avval childlardan chiqarib olishimiz kk. flat(2) desak bitta childni chiqarib beradi, agar ular bir nechta bo'lsa  va nechtaligini bilmasak, flat(Infinity) deb yozilsa hamma childlarni arrayga chiqarib beradi va biz uni ustida amal bajarishimiz mumkin bo'ladi.
+// flat() methodi bir necha ichma - ich arraylarni childdan chiqarib beradi. Masalan yuqoridagi c arrayni qiymatlarini hisoblamoqchi bo'lsak, avval childlardan chiqarib olishimiz kk. flat(2) desak bitta childni chiqarib beradi, agar ular bir nechta bo'lsa  va nechtaligini bilmasak, flat(Infinity) deb yozilsa hamma childlarni arrayga chiqarib beradi va biz uni ustida amal bajarishimiz mumkin bo'ladi.
 
 console.log(c.flat(Infinity).reduce((s, c) => s + c, 0));                       // 28
 

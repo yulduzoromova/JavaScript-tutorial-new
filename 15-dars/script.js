@@ -17,7 +17,7 @@ console.log(obj, obj.name);     // { name: 'webbrain' } webbrain
 console.log(map, map.name);     // Map(0) { name: 'webbrain' } webbrain
 
 // new Mapni ham objecni qanday ishlatsak huddi shunday ishlatsak bo'ladi, lekin
-// ln new Map boshqa maqsadda ishlatiladi obyect sifatida emas va set() orqali ma'lumot qo'shamiz, get() orqali esa ma'kumotni olish mumkin.
+// ln new Map boshqa maqsadda ishlatiladi obyect sifatida emas va set() orqali ma'lumot qo'shamiz, get() orqali esa ma'lumotni olish mumkin.
 // map.size mapning uzunligini ko'rsatadi huddi obj.lengthdek 
 
 map.set("name", "IT Center")
@@ -104,6 +104,20 @@ console.log(set.has(name));   // true
 
 // huddi mapdagidek delete() va clear() metodlari setda ham bor delete() 1ta ma'lumotni o'chirsa,
 // clear() setni ichidagi barcha ma'lumotlarni o'chiradi.
+
+// Berilgan massivning uniq qiymatlarini chiqarsin
+
+function uniqValues(array) {
+  return Array.from(new Set(array))
+}
+
+console.log(uniqValues([1,1,2,2,4,4,4,4,4,5,5,6,6,]));    // [ 1, 2, 4, 5, 6 ]
+
+// bu misolni boshqacharoq yozsak ham bo'ladi.
+function uniqValue(array) {
+  return [... new Set(array)]
+}
+console.log(uniqValue([1,1,2,2,4,4,4,4,4,5,5,6,6,]));    // [ 1, 2, 4, 5, 6 ]
 
 
 // ======== WeakMap va WeakSet ========= 
